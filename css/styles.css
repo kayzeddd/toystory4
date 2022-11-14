@@ -1,0 +1,191 @@
+@import "_reset.css";
+/*  Color palette
+    -----------------------
+    color       HEX code  RGB code
+    -------------------------------------
+    red:      	#960001	  rgb(150,0,1)
+    yellow:     #e2e55f	  rgb(226,229,95)
+    green:      #96c25f	  rgb(150,194,95)
+    blue:       #5582c6	  rgb(85,130,198)
+    purple: 	  #79519f	  rgb(121,81,159) 
+
+    fonts
+    -----------------------
+    headings:   Cabin
+    body:       Roboto
+
+    font-sizes:
+    -----------------------
+    h1:   70px
+    h2:   36px
+    h3    24px
+    body: 17px (all other text)
+
+    breakpoints
+    -----------------------
+    desktop: 1200px
+    
+    max-width of the content is 1400px
+*/
+
+/* Add all of your styles here */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #5582c6;
+}
+
+.bg-div {
+  width: 100vw;
+  height: 58vh;
+  overflow: hidden;
+  background-image: url("../images/toystory4_wallpaper.jpg");
+  background-size: cover;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  max-width: 1400px;
+}
+
+.header-div {
+  display: flex;
+  max-height: 30vh;
+}
+
+.header-div img {
+  height: 50vh;
+  width: auto;
+  position: relative;
+  top: -25vh;
+}
+
+.header-div h1 {
+  color: #960001;
+  font-family: Cabin, Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  background-color: rgb(216, 226, 231);
+  padding: 15px 40px;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: Cabin, Arial, Helvetica, sans-serif;
+  color: #960001;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #96c25f;
+}
+
+p,
+span {
+  color: white;
+  padding: 25px 0px;
+  line-height: 25px;
+  font-size: 17px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.characters-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 25px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Cabin, Arial, Helvetica, sans-serif;
+  color: #960001;
+  margin-bottom: 5px;
+}
+
+.characters-grid img {
+  width: 220px;
+  height: 220px;
+  padding-top: 5px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  float: left;
+}
+
+a {
+  color: #e2e55f;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e7e7ac;
+}
+
+.woody-quote-container {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: #e2e55f;
+  border-top: 3px solid #2a7c1a;
+  margin-bottom: 50px;
+}
+
+.woody-quote-container p {
+  color: #960001;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  margin-left: 200px;
+}
+
+.woody-quote-container p strong {
+  font-weight: bold;
+}
+
+footer {
+  min-height: 400px;
+}
+
+.rating-div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-top: 35px;
+}
+
+.rating-div p {
+  padding: 5px 0px;
+}
+
+.rating-div input {
+  height: 35px;
+  width: 450px;
+  font-size: 24px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.rating-div button {
+  height: 40px;
+  width: 455px;
+  font-size: 24px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+  background-color: #79519f;
+  border: transparent;
+  cursor: pointer;
+}
+
+.rating-div button:hover {
+  background-color: #9a79b9;
+}
+
+.rating-div button:active {
+  transform: translateY(3px);
+}
